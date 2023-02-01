@@ -1,5 +1,5 @@
 import { AppLogo } from './app-logo'
-import { MainNav } from './main-nav'
+import { MainNav } from '../cmps/main-nav'
 
 export function AppHeader() {
     return (

@@ -1,9 +1,10 @@
-import { AppHeader } from './cmps/app-header'
-import { AppFooter } from './cmps/app-footer'
+import { AppHeader } from './app-common/app-header'
+import { AppFooter } from './app-common/app-footer'
 import { AdvantagesList } from './cmps/advantages-list'
 
 import HomePattern1 from '../assets/images/bg-pattern-home-1.svg'
 import HomePattern2 from '../assets/images/bg-pattern-home-2.svg'
+import HomePattern3 from '../assets/images/bg-pattern-home-3.svg'
 import AvatarKady from '../assets/images/avatar-kady.jpg'
 import AvatarAiysha from '../assets/images/avatar-aiysha.jpg'
 import AvatarArthur from '../assets/images/avatar-arthur.jpg'
@@ -36,6 +37,9 @@ export function Home() {
                     <div className='advanteges-wrapper'>
                         <AdvantagesList />
                     </div>
+                </div>
+                <div className='right-patterns'>
+                    <img src={HomePattern3} alt='HomePattern3' />
                 </div>
             </section>
             <section className='recommendations full main-layout'>

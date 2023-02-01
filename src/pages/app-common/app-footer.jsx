@@ -1,5 +1,5 @@
 import { AppLogo } from './app-logo'
-import { MainNav } from './main-nav'
+import { MainNav } from '../cmps/main-nav'
 import IconFacebook from '../../assets/images/icon-facebook.svg'
 import IconTwitter from '../../assets/images/icon-twitter.svg'
 import IconPinterest from '../../assets/images/icon-pinterest.svg'

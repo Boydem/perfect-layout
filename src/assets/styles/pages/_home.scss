@@ -67,6 +67,15 @@ body {
 .advantages {
     padding: 100px calc(100px - $layoutPadding);
     background-color: $green-800;
+    position: relative;
+    overflow: hidden;
+    .right-patterns {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 35%);
+    }
     h2 {
         font-weight: 600;
         width: 100%;
@@ -76,6 +85,19 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 64px;
+        position: relative;
+        h2 {
+            margin-top: 54px;
+        }
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: $pink;
+        }
     }
     .advanteges-wrapper {
         display: flex;
@@ -198,14 +220,19 @@ body {
     }
     .advantages {
         min-height: 684px;
-        h2 {
-            font-weight: 400;
-            max-width: 445px;
-        }
+
         .wrapper {
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
+            &::before {
+                top: -54px;
+            }
+            h2 {
+                font-weight: 400;
+                max-width: 445px;
+                margin-top: 0;
+            }
             > * {
                 flex-basis: 50%;
             }
