@@ -7,17 +7,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        > * {
-            height: 100%;
-        }
+        gap: 32px;
     }
     .intro {
+        justify-content: space-between;
         display: flex;
-        gap: 125px;
+        width: 100%;
     }
     .contact-details {
     }
     .social-copywrite {
+        justify-content: space-between;
         width: 100%;
         .social {
             gap: 16px;
@@ -28,12 +28,22 @@
     }
     @media (min-width: $break-narrow) {
         & {
+            .intro {
+                gap: 125px;
+                justify-content: unset;
+                width: unset;
+            }
             .wrapper {
+                gap: 0px;
                 flex-wrap: nowrap;
+                > * {
+                    height: 100%;
+                }
             }
             .intro {
             }
             .social-copywrite {
+                flex-direction: column;
                 width: unset;
             }
         }

@@ -20,7 +20,7 @@ export function AppFooter() {
                         <p className='txt-opacity-60'>Call Us : 949-833-7432</p>
                     </div>
                 </div>
-                <div className='social-copywrite flex column'>
+                <div className='social-copywrite flex'>
                     <ul className='social flex align-center clean-list'>
                         <li>
                             <img src={IconFacebook} alt='IconFacebook' />
@@ -32,7 +32,7 @@ export function AppFooter() {
                             <img src={IconTwitter} alt='IconTwitter' />
                         </div>
                     </ul>
-                    <div className='copywrite'>Copyright 2020. All Rights Reserved</div>
+                    <div className='copywrite txt-opacity-60'>Copyright 2020. All Rights Reserved</div>
                 </div>
             </div>
         </div>
