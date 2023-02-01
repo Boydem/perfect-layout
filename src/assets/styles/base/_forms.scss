@@ -1,0 +1,28 @@
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    // border-radius: $spacing-xxs;
+    // padding: $spacing-xs;
+}
+
+select {
+}
+
+input[type='color'] {
+    cursor: pointer;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+input[type='color' i] {
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+}

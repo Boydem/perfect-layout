@@ -1,0 +1,27 @@
+.app-header {
+    color: $white;
+    margin-bottom: -47px;
+    transform: translateY(73px);
+    z-index: 99;
+    .wrapper {
+        display: flex;
+        .logo {
+            margin-inline-end: $layoutPadding * 2;
+        }
+
+        .btn-header-cta {
+            margin-inline-start: auto;
+        }
+    }
+    .logo {
+    }
+}
+.main-nav {
+    .nav-links {
+        gap: $layoutPadding / 2;
+
+        .nav-link {
+            height: 100%;
+        }
+    }
+}

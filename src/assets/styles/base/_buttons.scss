@@ -1,0 +1,36 @@
+/* for all buttons */
+a,
+button {
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+        background-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95), stroke 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+// reset
+button {
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.btn {
+    border-radius: 55px;
+    padding: 9px 33px;
+    width: max-content;
+    border: 2px solid;
+    font-weight: 500;
+
+    &.white {
+        color: $white;
+        border-color: $white;
+    }
+    &.pink {
+        color: $pink;
+        border-color: $pink;
+    }
+}

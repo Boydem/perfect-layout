@@ -1,0 +1,28 @@
+// COLOR PALETTE
+$white: #fff;
+$pink: #f67e7e;
+$green-txt: #79c8c7;
+$green-muted: #2c6269;
+$contrast-txt-color: #012f34;
+$green-600: #014e56;
+$green-700: #004047;
+$green-800: #012f34;
+$green-900: #002529;
+
+// font
+$font-family: 'Livvic', Arial, Helvetica, sans-serif;
+$base-font-size: 15px;
+$base-font-ratio: 1.66;
+
+// fixed sizes
+$app-header-height: 52px + 1px; // 1px for border-bottom addition
+
+// LAYOUT
+$layoutPadding: 40px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 768px;
+$break-normal: 1110px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;

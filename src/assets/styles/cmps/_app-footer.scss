@@ -1,0 +1,41 @@
+.app-footer {
+    background-color: $green-900;
+    min-height: 196px;
+    .wrapper {
+        // width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > * {
+            height: 100%;
+        }
+    }
+    .intro {
+        display: flex;
+        gap: 125px;
+    }
+    .contact-details {
+    }
+    .social-copywrite {
+        width: 100%;
+        .social {
+            gap: 16px;
+            align-self: flex-end;
+        }
+        .copywrite {
+        }
+    }
+    @media (min-width: $break-narrow) {
+        & {
+            .wrapper {
+                flex-wrap: nowrap;
+            }
+            .intro {
+            }
+            .social-copywrite {
+                width: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.pink-txt {
+    color: $pink;
+}
+.green-txt {
+    color: $green-txt;
+}
+.txt-opacity-60 {
+    opacity: 60%;
+}
+.txt-opacity-80 {
+    opacity: 80%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+}
+.type-15 {
+    font-size: 15px;
+    line-height: 25px;
+}
+.type-18 {
+    font-size: 15px;
+    line-height: 28px;
+}
+
+@media (min-width: $break-narrow) {
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+
+    .type-18 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
