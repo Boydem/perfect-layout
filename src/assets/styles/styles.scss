@@ -9,8 +9,6 @@
 @import './base/_base.scss';
 @import './base/_helpers.scss';
 @import './base/_layout.scss';
-@import './base/_forms.scss';
-@import './base/_tags.scss';
 @import './base/_buttons.scss';
 
 //**// COMPONENTS //**//
@@ -21,3 +19,9 @@
 
 // Home
 @import './pages/_home.scss';
+
+// Home cmps
+@import './cmps/_hero.scss';
+@import './cmps/_testimonial.scss';
+@import './cmps/_advantages.scss';
+@import './cmps/_cta.scss';

@@ -1,0 +1,87 @@
+// Advantages section
+.advantages {
+    padding: 100px calc(100px - $layoutPadding);
+    background-color: $green-800;
+    position: relative;
+    overflow: hidden;
+    .right-patterns {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(50%, 0%);
+    }
+    h2 {
+        font-weight: 600;
+        width: 100%;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 64px;
+        position: relative;
+        h2 {
+            margin-top: 54px;
+        }
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: $pink;
+        }
+    }
+    .advantages-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .advantages-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .advantages-item {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-template-rows: repeat(2, auto);
+                gap: 32px 23px;
+                .icon {
+                }
+                .text-wrapper {
+                    :first-child {
+                        margin-bottom: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+// Narrow
+@media (min-width: $break-narrow) {
+    .advantages {
+        min-height: 684px;
+        .right-patterns {
+            bottom: 0;
+            top: unset;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            &::before {
+                top: -54px;
+            }
+            h2 {
+                font-weight: 400;
+                max-width: 445px;
+                margin-top: 0;
+            }
+            > * {
+                flex-basis: 50%;
+            }
+        }
+    }
+}
