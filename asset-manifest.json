@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/perfect-layout/static/css/main.ce6875ab.css",
-    "main.js": "/perfect-layout/static/js/main.04b5d368.js",
+    "main.js": "/perfect-layout/static/js/main.2c8f7251.js",
     "static/media/avatar-kady.jpg": "/perfect-layout/static/media/avatar-kady.78fc482c1b331d912ca1.jpg",
     "static/media/avatar-arthur.jpg": "/perfect-layout/static/media/avatar-arthur.098c2e26b1c3fa071061.jpg",
     "static/media/avatar-aiysha.jpg": "/perfect-layout/static/media/avatar-aiysha.e119a0c1a5a4d6a6d0bb.jpg",
@@ -20,10 +20,10 @@
     "static/media/icon-facebook.svg": "/perfect-layout/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
     "static/media/bg-pattern-home-4-about-3.svg": "/perfect-layout/static/media/bg-pattern-home-4-about-3.aacd4e03b04df33749baa362f4612832.svg",
     "main.ce6875ab.css.map": "/perfect-layout/static/css/main.ce6875ab.css.map",
-    "main.04b5d368.js.map": "/perfect-layout/static/js/main.04b5d368.js.map"
+    "main.2c8f7251.js.map": "/perfect-layout/static/js/main.2c8f7251.js.map"
   },
   "entrypoints": [
     "static/css/main.ce6875ab.css",
-    "static/js/main.04b5d368.js"
+    "static/js/main.2c8f7251.js"
   ]
 }
