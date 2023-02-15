@@ -36,6 +36,7 @@
             flex-direction: column;
             position: relative;
             z-index: 1;
+            margin-inline: auto;
             .quotes {
                 left: 50%;
                 transform: translateX(-50%);
@@ -45,6 +46,7 @@
             }
             .testimonial-body {
                 margin-top: 36px;
+                max-width: 400px;
             }
             .written-by {
                 font-weight: 600;
@@ -56,7 +58,7 @@
 }
 
 // Narrow
-@media (min-width: $break-narrow) {
+@media (min-width: $break-normal) {
     .testimonial {
         h2 {
             max-width: 90%;

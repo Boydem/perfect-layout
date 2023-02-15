@@ -5,12 +5,15 @@
     min-height: 700px;
     position: relative;
     .hero-p {
-        max-width: 457px;
         margin: auto;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
     }
     .wrapper {
         grid-row: 1/-1;
         place-content: center;
+        grid-template-columns: 1fr;
         gap: 24px;
     }
     h1 {
@@ -18,11 +21,7 @@
         max-width: 350px;
         margin: auto;
     }
-    p {
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-    }
+
     .left-patterns,
     .bot-patterns {
         img {
@@ -55,9 +54,24 @@
 // Narrow
 @media (min-width: $break-narrow) {
     .hero {
+        h1 {
+            max-width: 550px;
+        }
+    }
+}
+
+// Normal
+@media (min-width: $break-normal) {
+    .hero {
         text-align: start;
+        h1 {
+            max-width: 350px;
+        }
+        .wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
         .hero-p {
-            max-width: unset;
+            max-width: 457px;
             margin: unset;
         }
         .bot-patterns {

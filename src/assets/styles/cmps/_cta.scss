@@ -4,11 +4,13 @@
     background-color: $pink;
     color: $contrast-txt-color;
     position: relative;
+    z-index: 0;
     .left-patterns {
         position: absolute;
         bottom: 0;
         left: 0;
         grid-column: 1/-1;
+        z-index: -1;
     }
     .wrapper {
         align-items: center;
@@ -17,12 +19,13 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
+        padding-left: 10rem;
     }
     button {
     }
 }
 // Narrow
-@media (min-width: $break-narrow) {
+@media (min-width: $break-normal) {
     .cta {
     }
 }
