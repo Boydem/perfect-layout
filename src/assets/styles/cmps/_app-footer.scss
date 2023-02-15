@@ -1,38 +1,72 @@
 .app-footer {
     background-color: $green-900;
     min-height: 196px;
+    .fotter-nav-logo {
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
     .wrapper {
         // width: 100%;
         padding: 56px 0;
         flex-wrap: wrap;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         gap: 32px;
     }
     .intro {
-        justify-content: space-between;
+        flex-direction: column;
         display: flex;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .contact-details {
     }
     .social-copywrite {
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         width: 100%;
         .social {
             gap: 16px;
             align-self: flex-end;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 1rem;
         }
         .copywrite {
         }
     }
-    @media (min-width: $break-narrow) {
+    @media (min-width: 440px) {
+        & {
+            .fotter-nav-logo {
+                align-items: stretch;
+            }
+            .intro {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .wrapper {
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .social-copywrite {
+                flex-direction: row;
+                .social {
+                    width: max-content;
+                    justify-content: unset;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: $break-desktop) {
         & {
             .intro {
                 gap: 125px;
-                justify-content: unset;
-                width: unset;
+                width: 100%;
             }
             .wrapper {
                 gap: 0px;
@@ -41,11 +75,9 @@
                     height: 100%;
                 }
             }
-            .intro {
-            }
+
             .social-copywrite {
-                flex-direction: column;
-                width: unset;
+                margin-top: 3rem;
             }
         }
     }

@@ -1,4 +1,4 @@
-// COLOR PALETTE
+// Color pallete
 $white: #fff;
 $pink: #f67e7e;
 $green-txt: #79c8c7;
@@ -9,20 +9,20 @@ $green-700: #004047;
 $green-800: #012f34;
 $green-900: #002529;
 
-// font
+// Base font vars
 $base-font-family: 'Livvic', Arial, Helvetica, sans-serif;
 $base-font-size: 15px;
 $base-font-ratio: 1.66;
 
-// fixed sizes
+// Fixed sizes
 $app-header-height: 52px + 1px; // 1px for border-bottom addition
 
-// LAYOUT
-$layoutPadding: 40px;
+// Layout padding
+$layoutPadding: 20px;
 
-// LAYOUT BREAKPOINTS
-$break-narrow: 768px;
-$break-normal: 1110px;
+// Layout breakpoints
+$break-tablet: 768px;
+$break-desktop: 1110px;
 
-$padded-break-narrow: $break-narrow + $layoutPadding * 2;
-$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-tablet: $break-tablet + $layoutPadding * 2;
+$padded-break-desktop: $break-desktop + $layoutPadding * 2;

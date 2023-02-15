@@ -26,3 +26,17 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .app-header {
+        .wrapper {
+            justify-content: space-between;
+        }
+    }
+    .main-nav {
+        // display: none;
+    }
+    .btn-header-cta {
+        display: none;
+    }
+}

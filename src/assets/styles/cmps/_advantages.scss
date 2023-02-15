@@ -1,6 +1,6 @@
 // Advantages section
 .advantages {
-    padding: 100px calc(100px - $layoutPadding);
+    padding: 50px 0;
     background-color: $green-800;
     position: relative;
     overflow: hidden;
@@ -14,6 +14,7 @@
     h2 {
         font-weight: 600;
         width: 100%;
+        padding-right: 100px;
     }
     .wrapper {
         display: flex;
@@ -59,9 +60,15 @@
         }
     }
 }
-// Narrow
-@media (min-width: $break-normal) {
+@media (min-width: $break-tablet) {
     .advantages {
+        padding: 100px 20px;
+    }
+}
+// Narrow
+@media (min-width: $break-desktop) {
+    .advantages {
+        padding: 100px calc(100px - $layoutPadding);
         min-height: 684px;
         .right-patterns {
             bottom: 0;
@@ -78,6 +85,7 @@
                 font-weight: 400;
                 max-width: 445px;
                 margin-top: 0;
+                padding-right: 0;
             }
             > * {
                 flex-basis: 50%;

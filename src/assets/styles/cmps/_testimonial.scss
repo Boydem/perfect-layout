@@ -1,6 +1,6 @@
 // testimonial section
 .testimonial {
-    padding: 100px calc(100px - $layoutPadding);
+    padding: 100px 0;
     background-color: $green-700;
     min-height: 745px;
     position: relative;
@@ -22,7 +22,6 @@
     }
     h2 {
         text-align: center;
-        max-width: 90%;
         margin: 1rem auto 56px;
     }
     .testimonial-list {
@@ -46,7 +45,7 @@
             }
             .testimonial-body {
                 margin-top: 36px;
-                max-width: 400px;
+                max-width: 600px;
             }
             .written-by {
                 font-weight: 600;
@@ -56,10 +55,16 @@
         }
     }
 }
-
-// Narrow
-@media (min-width: $break-normal) {
+// tablet
+@media (min-width: $break-tablet) {
     .testimonial {
+        padding: 100px 20px;
+    }
+}
+// desktop
+@media (min-width: $break-desktop) {
+    .testimonial {
+        padding: 100px calc(100px - $layoutPadding);
         h2 {
             max-width: 90%;
             margin: 0px auto 40px;

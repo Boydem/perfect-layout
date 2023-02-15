@@ -13,19 +13,37 @@
         z-index: -1;
     }
     .wrapper {
-        align-items: center;
         max-width: 917px;
         width: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
-        padding-left: 10rem;
+        padding: 3.5rem 0 7rem 0rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
     }
     button {
+        flex-shrink: 0;
     }
 }
 // Narrow
-@media (min-width: $break-normal) {
+@media (min-width: $break-tablet) {
     .cta {
+        .wrapper {
+            justify-content: space-between;
+            flex-direction: row;
+            text-align: start;
+            padding: 3.5rem 0 7rem 1.5rem;
+        }
+    }
+}
+// Normal
+@media (min-width: $break-desktop) {
+    .cta {
+        .wrapper {
+            padding: 5rem;
+        }
     }
 }

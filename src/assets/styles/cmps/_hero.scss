@@ -9,6 +9,7 @@
         height: 100%;
         display: flex;
         align-items: flex-end;
+        max-width: 400px;
     }
     .wrapper {
         grid-row: 1/-1;
@@ -18,8 +19,9 @@
     }
     h1 {
         font-weight: 700;
-        max-width: 350px;
+        max-width: 220px;
         margin: auto;
+        font-size: 40px;
     }
 
     .left-patterns,
@@ -51,21 +53,35 @@
     }
 }
 
-// Narrow
-@media (min-width: $break-narrow) {
+@media (min-width: 400px) {
     .hero {
         h1 {
-            max-width: 550px;
+            font-size: 64px;
+            max-width: 350px;
+        }
+    }
+}
+
+// Narrow
+@media (min-width: $break-tablet) {
+    .hero {
+        h1 {
+            max-width: 382px;
+            font-size: 64px;
+        }
+        .hero-p {
+            max-width: 500px;
         }
     }
 }
 
 // Normal
-@media (min-width: $break-normal) {
+@media (min-width: $break-desktop) {
     .hero {
         text-align: start;
         h1 {
             max-width: 350px;
+            font-size: 100px;
         }
         .wrapper {
             grid-template-columns: 1fr 1fr;
